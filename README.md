@@ -12,11 +12,11 @@ https://mattlewis92.github.io/angular-resizable-element/
 
 ## Table of contents
 
-- [About](#about)
-- [Installation](#installation)
-- [Documentation](#documentation)
-- [Development](#development)
-- [License](#license)
+-   [About](#about)
+-   [Installation](#installation)
+-   [Documentation](#documentation)
+-   [Development](#development)
+-   [License](#license)
 
 ## About
 
@@ -37,94 +37,73 @@ import { Component } from '@angular/core';
 import { ResizeEvent } from 'angular-resizable-element';
 
 @Component({
-  selector: 'demo-app',
-  styles: [
-    `
-      .rectangle {
-        position: relative;
-        top: 200px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 300px;
-        height: 150px;
-        background-color: #fd4140;
-        border: solid 1px #121621;
-        color: #121621;
-        margin: auto;
-      }
+	selector: 'demo-app',
+	styles: [
+		`
+			.rectangle {
+				position: relative;
+				top: 200px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 300px;
+				height: 150px;
+				background-color: #fd4140;
+				border: solid 1px #121621;
+				color: #121621;
+				margin: auto;
+			}
 
-      mwlResizable {
-        box-sizing: border-box; // required for the enableGhostResize option to work
-      }
+			mwlResizable {
+				box-sizing: border-box; // required for the enableGhostResize option to work
+			}
 
-      .resize-handle-top,
-      .resize-handle-bottom {
-        position: absolute;
-        height: 5px;
-        cursor: row-resize;
-        width: 100%;
-      }
+			.resize-handle-top,
+			.resize-handle-bottom {
+				position: absolute;
+				height: 5px;
+				cursor: row-resize;
+				width: 100%;
+			}
 
-      .resize-handle-top {
-        top: 0;
-      }
+			.resize-handle-top {
+				top: 0;
+			}
 
-      .resize-handle-bottom {
-        bottom: 0;
-      }
+			.resize-handle-bottom {
+				bottom: 0;
+			}
 
-      .resize-handle-left,
-      .resize-handle-right {
-        position: absolute;
-        height: 100%;
-        cursor: col-resize;
-        width: 5px;
-      }
+			.resize-handle-left,
+			.resize-handle-right {
+				position: absolute;
+				height: 100%;
+				cursor: col-resize;
+				width: 5px;
+			}
 
-      .resize-handle-left {
-        left: 0;
-      }
+			.resize-handle-left {
+				left: 0;
+			}
 
-      .resize-handle-right {
-        right: 0;
-      }
-    `,
-  ],
-  template: `
-    <div
-      class="rectangle"
-      mwlResizable
-      [enableGhostResize]="true"
-      (resizeEnd)="onResizeEnd($event)"
-    >
-      <div
-        class="resize-handle-top"
-        mwlResizeHandle
-        [resizeEdges]="{ top: true }"
-      ></div>
-      <div
-        class="resize-handle-left"
-        mwlResizeHandle
-        [resizeEdges]="{ left: true }"
-      ></div>
-      <div
-        class="resize-handle-right"
-        mwlResizeHandle
-        [resizeEdges]="{ right: true }"
-      ></div>
-      <div
-        class="resize-handle-bottom"
-        mwlResizeHandle
-        [resizeEdges]="{ bottom: true }"
-      ></div>
-    </div>
-  `,
+			.resize-handle-right {
+				right: 0;
+			}
+		`,
+	],
+	template: `
+		<div class="rectangle" mwlResizable [enableGhostResize]="true" (resizeEnd)="onResizeEnd($event)">
+			<div class="resize-handle-top" mwlResizeHandle [resizeEdges]="{ top: true }"></div>
+			<div class="resize-handle-left" mwlResizeHandle [resizeEdges]="{ left: true }"></div>
+			<div class="resize-handle-right" mwlResizeHandle [resizeEdges]="{ right: true }"></div>
+			<div class="resize-handle-bottom" mwlResizeHandle [resizeEdges]="{ bottom: true }"></div>
+		</div>
+	`,
 })
 export class MyComponent {
-  onResizeEnd(event: ResizeEvent): void {
-    console.log('Element was resized', event);
-  }
+	onResizeEnd(event: ResizeEvent): void {
+		console.log('Element was resized', event);
+	}
 }
 
 // now use within your apps module
@@ -132,9 +111,9 @@ import { NgModule } from '@angular/core';
 import { ResizableModule } from 'angular-resizable-element';
 
 @NgModule({
-  declarations: [MyComponent],
-  imports: [ResizableModule],
-  bootstrap: [MyComponent],
+	declarations: [MyComponent],
+	imports: [ResizableModule],
+	bootstrap: [MyComponent],
 })
 class MyModule {}
 ```
@@ -150,9 +129,9 @@ https://mattlewis92.github.io/angular-resizable-element/docs/
 
 ### Prepare your environment
 
-- Install [Node.js (>=14.19.0 or >=16.9.0)](http://nodejs.org/)
-- Install pnpm: `corepack enable`
-- Install local dev dependencies: `pnpm install` while current directory is this repo
+-   Install [Node.js (>=14.19.0 or >=16.9.0)](http://nodejs.org/)
+-   Install pnpm: `corepack enable`
+-   Install local dev dependencies: `pnpm install` while current directory is this repo
 
 ### Development server
 

@@ -5,8 +5,8 @@ import 'zone.js/testing';
 import 'zone.js/plugins/mocha-patch';
 import { getTestBed } from '@angular/core/testing';
 import {
-  BrowserDynamicTestingModule,
-  platformBrowserDynamicTesting,
+	BrowserDynamicTestingModule,
+	platformBrowserDynamicTesting,
 } from '@angular/platform-browser-dynamic/testing';
 
 import { use } from 'chai';
@@ -16,7 +16,7 @@ use(sinonChai);
 
 // First, initialize the Angular testing environment.
 getTestBed().initTestEnvironment(
-  BrowserDynamicTestingModule,
-  platformBrowserDynamicTesting(),
-  { teardown: { destroyAfterEach: true } }
+	BrowserDynamicTestingModule,
+	platformBrowserDynamicTesting(),
+	{ teardown: { destroyAfterEach: true } }
 );

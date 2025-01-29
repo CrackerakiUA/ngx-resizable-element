@@ -4,8 +4,8 @@ import { ResizableModule } from 'angular-resizable-element';
 import { DemoComponent } from './demo.component';
 
 @NgModule({
-  declarations: [DemoComponent],
-  imports: [BrowserModule, ResizableModule],
-  bootstrap: [DemoComponent],
+	declarations: [DemoComponent],
+	imports: [BrowserModule, ResizableModule],
+	bootstrap: [DemoComponent],
 })
 export class DemoModule {}
