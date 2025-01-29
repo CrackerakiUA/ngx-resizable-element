@@ -1,5 +1,9 @@
 # Changelog
 
+### ⚠ Rename into ngx-resizable-element
+
+* as it looks like origin plugin is not maintained, builded an fork which will be maintained
+
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
 ### [7.0.2](https://github.com/mattlewis92/angular-resizable-element/compare/v7.0.1...v7.0.2) (2022-12-13)
