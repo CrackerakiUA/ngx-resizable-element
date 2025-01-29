@@ -12,15 +12,22 @@ https://mattlewis92.github.io/angular-resizable-element/
 
 ## Table of contents
 
--   [About](#about)
--   [Installation](#installation)
--   [Documentation](#documentation)
--   [Development](#development)
--   [License](#license)
+-   [angular resizable element](#angular-resizable-element)
+    -   [Demo](#demo)
+    -   [Table of contents](#table-of-contents)
+    -   [About](#about)
+    -   [Installation](#installation)
+    -   [Documentation](#documentation)
+    -   [Development](#development)
+        -   [Prepare your environment](#prepare-your-environment)
+        -   [Development server](#development-server)
+        -   [Testing](#testing)
+        -   [Release](#release)
+    -   [License](#license)
 
 ## About
 
-An angular 15.0+ directive that allows an element to be dragged and resized
+An angular 19 directive that allows an element to be dragged and resized
 
 ## Installation
 

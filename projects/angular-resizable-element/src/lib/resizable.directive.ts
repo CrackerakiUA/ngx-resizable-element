@@ -324,7 +324,7 @@ export class ResizableDirective implements OnInit, OnDestroy {
 		).pipe(
 			tap(({ event }) => {
 				if (currentResize && event.cancelable) {
-					event.preventDefault();
+					// event.preventDefault();
 				}
 			}),
 			share()

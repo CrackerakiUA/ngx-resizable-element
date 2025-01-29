@@ -1,11 +1,25 @@
 # Changelog
 
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### 19.0.0 ngx-resizable-element (2025-01-29)
+
+* upgraded to latest angular
+
+### build
+
+* upgrade to angular 19 ([3182e7e](https://github.com/CrackerakiUA/ngx-resizable-element/commit/3182e7eec6a07a562829c24d6160a3b868687903))
+
+* upgrade to angular 18 ([4334940](https://github.com/CrackerakiUA/ngx-resizable-element/commit/43349405abb4d4f1a0b6768debb32b477eeb5e1c))
+
+* upgrade to angular 17 ([5fd41ad](https://github.com/CrackerakiUA/ngx-resizable-element/commit/5fd41adf9f9016ca9a6bd034cbe7dcc916b2fd60))
+
+* upgrade to angular 16 ([d416ddf](https://github.com/CrackerakiUA/ngx-resizable-element/commit/d416ddf2b52e27cec1f16319f7fe1986dc6b2779))
+
 ### ⚠ Rename into ngx-resizable-element
 
 * as it looks like origin plugin is not maintained, builded an fork which will be maintained
-
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
-
+*
 ### [7.0.2](https://github.com/mattlewis92/angular-resizable-element/compare/v7.0.1...v7.0.2) (2022-12-13)
 
 

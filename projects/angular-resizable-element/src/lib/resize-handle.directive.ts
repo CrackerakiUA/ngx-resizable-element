@@ -107,7 +107,7 @@ export class ResizeHandleDirective implements OnInit, OnDestroy {
 		clientY: number
 	): void {
 		if (event.cancelable) {
-			event.preventDefault();
+			// event.preventDefault();
 		}
 		if (!this.eventListeners.touchmove) {
 			this.eventListeners.touchmove = this.renderer.listen(
